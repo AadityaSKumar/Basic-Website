@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Basic HTML Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <h1 style="text-align:center;">Basic Website</h1>
+    <p id="para2"style="text-align:center;">By: Aaditya Kumar</p>
+    <hr>
+    
+    <!-- Check style.css for style code (para1) -->
+
+
+    <h2 id="para1">HTML5 Programs</h2>
+
+    <div id="result"></div>
+
+<!-- HTML Program Part -->
+
+<p>Above is a simple output of Code. This is a code for WebStorage. It gets the data stored in the variable and sends it. The Animation block is a CSS Animation using px.</p>
+
+<!-- CSS Styling Part -->
+
+    <hr>
+    <h2 id="para1"style="text-align:center;">CSS Styling Showcase</h2>
+    <p>Here i will be showing some CSS Styling:</p>
+    <!-- <hr> -->
+    <p id="pad1"class="round1">This is a Rounded Border</p>
+
+    <p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+
+<!-- <a href="page2.html">
+      <input type="submit"/>
+     </a> -->
+
+<button class="button" style="vertical-align:middle"><span>Hover </span></button>
+
+<a href="page2.html">
+      <input type="submit"/>
+     </a>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+
+<!-- CSS Animations Part -->
+
+
+<hr>
+    <h2 id="para1"style="text-align:center;">CSS Animation Showcase</h2>
+    <p>Here i will be showing some CSS Animations. I advise to do this in JS but it is also possible:</p>
+
+    <tip class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</tip>
+
+
+
+ <!-- Enable rcorner3 if needed -->
+
+<!-- <p>Rounded corners for an element with a background image:</p> -->
+<!-- <p id="rcorners3">Rounded corners!</p> -->
+
+
+<!-- Script for HTML5 Secition -->
+
+    <script>
+
+
+      // Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Animation Block");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+
+    </script>
+
+  
+  </body>
+</html>
